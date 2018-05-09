@@ -1,6 +1,6 @@
 ---
-title: Pest 1
+title: Pest
 date: 2018-05-09 22:36:00 Z
 ---
 
-Pest 1
+Pest
