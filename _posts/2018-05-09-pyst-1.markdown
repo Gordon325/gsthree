@@ -1,6 +1,6 @@
 ---
-title: Pyst 1
+title: Pyst
 date: 2018-05-09 23:27:00 Z
 ---
 
-Pyst 1
+Pyst 
