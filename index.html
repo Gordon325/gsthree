@@ -32,6 +32,19 @@
   <div class="break"></div>
 
 
+  <div class="skills_wrapper">
+                {% for post in site.posts %}
+  <div class="skills">
+
+    <img class="skills_img" src="http://via.placeholder.com/60x60"/>
+    <h2 class="skills_title">{{ post.title }}</h2>
+    <p class="skills_desc">{{ post.content }}</p>
+
+  </div>
+      {% endfor %}
+  </div>
+
+
   <div class="break"></div>
   <div class="skills_wrapper">
     <div class="work_samples">
