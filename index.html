@@ -30,6 +30,7 @@
   </p>
 </div>
   <div class="break"></div>
+<<<<<<< HEAD
   <div class="skills_wrapper">
   <div class="skills">
     <img class="skills_img" src="http://via.placeholder.com/60x60"/>
@@ -52,6 +53,23 @@
     <p class="skills_desc">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
   </div>
     </div>
+=======
+
+
+  <div class="skills_wrapper">
+                {% for post in site.posts %}
+  <div class="skills">
+
+    <img class="skills_img" src="http://via.placeholder.com/60x60"/>
+    <h2 class="skills_title">{{ post.title }}</h2>
+    <p class="skills_desc">{{ post.content }}</p>
+
+  </div>
+      {% endfor %}
+  </div>
+
+
+>>>>>>> dabd21406a78ad51f8dd06b14b31cb33009f9199
   <div class="break"></div>
   <div class="skills_wrapper">
     <div class="work_samples">
