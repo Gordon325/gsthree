@@ -73,20 +73,7 @@
   </div>
 <div class="break"></div>
 
-<!-- Masonry Test -->
 
-<div class="grid">
-  <div class="grid-item"><img class="work_image_bottom" src="http://via.placeholder.com/215x215"/></div>
-  <div class="grid-item grid-item--width2"><img class="work_image_bottom" src="http://via.placeholder.com/530x215"/></div>
-    <div class="grid-item"><img class="work_image_bottom" src="http://via.placeholder.com/530x215"/></div>
-  <div class="grid-item"><img class="work_image_bottom" src="http://via.placeholder.com/215x215"/></div>
-    <div class="grid-item"><img class="work_image_bottom" src="http://via.placeholder.com/215x215"/></div>
-  <div class="grid-item"><img class="work_image_bottom" src="http://via.placeholder.com/215x215"/></div>
-</div>
-
-<!-- Masonry Test -->
-
-  <div class="break"></div>
 <div class="h1AndP">
   <h1 class="testimonials">
     Testimonials.
@@ -97,10 +84,22 @@
 </div>
   <div class="break"></div>
 
+ {% for post in site.portfolio %}
+				<div class="post">
+					<div class="image" style="background-image: url({{ post.featured_image}})"></div>
+					<div class="post-content">
+						<p class="date">{{ post.date | date: '%B %d, %Y' }}</p>
+						<h3>{{ post.title }}</h3>
+
+						{{ post.content }}
+						<p class="editor-link"><a href="cloudcannon:collections/{{ post.path }}" class="btn"><strong>&#9998;</strong> Edit Update</a></p>
+					</div>
+				</div>
+			{% endfor %}
 
      
     <script src="js/scripts.js"></script>
- script src="js/masonry-docs.min.js"></script>
+ <script src="js/masonry-docs.min.js"></script>
 
 
   </body>
