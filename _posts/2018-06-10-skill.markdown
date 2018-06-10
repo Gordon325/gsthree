@@ -1,0 +1,7 @@
+---
+title: Skill
+date: 2018-06-10 03:17:00 Z
+image: 
+---
+
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
